@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --peach: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  }
+  html {
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+  }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.66vw 11.46vw 0 11.46vw;
+  }
+  footer {
+    background-color: #13183f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8.33vw;
+  }
+  h1 {
+    font-size: 3.89vw;
+    color: #13183f;
+    font-weight: 800;
+    line-height: 4.93vw;
+    margin-bottom: 2.014vw;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 2.22vw;
+    line-height: 2.77vw;
+    color: white;
+    padding: 4.44vw 2.22vw 0 2.22vw;
+  }
+  h3 {
+    font-weight: 800;
+    font-size: 1.66vw;
+    line-height: 2.08vw;
+    padding-left: 2.22vw;
+    padding-top: 4.44vw;
+    color: #13183f;
+  }
+  h5 {
+    padding-top: 3.61vw;
+  }
+  p {
+    font-size: 1.25vw;
+    font-weight: 500;
+    line-height: 1.94vw;
+    color: #83869a;
+  }
+  .hero-mobile {
+    display: none;
+  }
+  .button {
+    font-weight: 700;
+    color: white;
+    font-size: 1.25vw;
+    font-family: "Plus Jakarta Sans";
+    border-radius: 1.94vw;
+    line-height: 1.94vw;
+    padding: 0.97vw 2.15vw;
+    border: none;
+    cursor: pointer;
+  }
+  .header-button {
+    background-color: #13183f;
+  }
+  .header-button:hover {
+    background-color: #666ca3;
+  }
+  
+  .container-button {
+    background: var(--peach);
+    margin-top: 2.77vw;
+  }
+  .container-button:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+  .footer-button {
+    background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    margin-right: 11.46vw;
+  }
+  .footer-button:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+  
+  .container {
+    /* overflow: hidden; */
+    display: block;
+  }
+  .container-text {
+    display: inline-block;
+    width: 31.74vw;
+    margin: 11.46vw 0 0 11.46vw;
+  }
+  .container-image {
+    display: inline-block;
+  }
+  .hero-image {
+    width: 63vw;
+    height: 53.61vw;
+    position: absolute;
+    left: 54.5vw;
+    top: -6.944vw;
+    z-index: -1;
+  }
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    height: 61.67vw;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    margin-top: 15.69vw;
+  }
+  .grid {
+    width: 77.08vw;
+    /* margin-left: 11.46vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 24.31vw);
+    grid-template-rows: repeat(2, 24.31vw);
+    grid-column-gap: 2.083vw;
+    grid-row-gap: 5.555vw;
+  }
+  .cell {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+  }
+  .cell-1 {
+    background: var(--peach);
+  }
+  .cell-2 > p,
+  .cell-3 > p,
+  .cell-4 > p,
+  .cell-5 > p,
+  .cell-6 > p {
+    padding-left: 2.22vw;
+    padding-top: 1.666vw;
+    padding-right: 2.22vw;
+  }
+  .pink-font {
+    color: #f74780;
+    font-size: 1.25vw;
+    line-height: 1.94vw;
+    font-weight: 700;
+    padding-left: 2.22vw;
+  }
+  .footer-logo {
+    padding-left: 11.46vw;
+  }
+  .icon {
+    position: absolute;
+    left: 2.22vw;
+    top: -1.67vw;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .grid {
+      width: 89.45vw;
+      display: grid;
+      grid-template-columns: repeat(2, 44.02vw);
+      grid-template-rows: repeat(3, 33.63vw);
+    }
+    p {
+      font-size: 2.08vw;
+      font-weight: 500;
+      line-height: 3.38vw;
+    }
+    h3 {
+      font-size: 2.6vw;
+      line-height: 3.27vw;
+      padding-left: 4.15vw;
+      padding-top: 7.27vw;
+    }
+    .pink-font {
+      color: #f74780;
+      font-size: 2.33vw;
+      line-height: 3.63vw;
+      font-weight: 700;
+      padding-left: 2.22vw;
+    }
+    .icon {
+      left: 4.15vw;
+      top: -3.12vw;
+    }
+    .grid-container {
+      height: 129.74vw;
+    }
+  
+    .button {
+      font-size: 2.077vw;
+      line-height: 3.37vw;
+      border-radius: 4.1vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 10.66vw;
+  
+      line-height: 13.3vw;
+      margin-bottom: 26px;
+    }
+    .grid-container {
+      height: 470vw;
+      padding-bottom: 50px;
+    }
+    .grid {
+      width: 91.46vw;
+      grid-template-columns: repeat(1, 91.46vw);
+      grid-template-rows: 32vw;
+      grid-row-gap: 10.66vw;
+    }
+    h3 {
+      font-size: 5.33vw;
+      line-height: 6.72vw;
+      padding-left: 7.46vw;
+      padding-top: 14.93vw;
+    }
+    p {
+      font-size: 4.26vw;
+      font-weight: 500;
+      line-height: 6.93vw;
+    }
+    .icon {
+      left: 7.46vw;
+      top: -6.4vw;
+    }
+    .pink-font {
+      color: #f74780;
+      font-size: 4.8vw;
+      line-height: 7.46vw;
+      font-weight: 700;
+      padding-left: 7.46vw;
+    }
+    .cell-2 > p,
+    .cell-3 > p,
+    .cell-4 > p,
+    .cell-5 > p,
+    .cell-6 > p {
+      padding-left: 7.46vw;
+      padding-top: 1.666vw;
+      padding-right: 2.22vw;
+    }
+    footer {
+      height: 32vw;
+    }
+    .button {
+      width: 167px;
+      font-size: 4.26vw;
+      line-height: 3.37vw;
+      border-radius: 6.93vw;
+      padding: 4vw 8vw;
+    }
+    .hero-image {
+      display: none;
+    }
+    h2 {
+      font-size: 6.4vw;
+      line-height: 8.53vw;
+  
+      padding: 6.4vw 7.73vw 0 7.73vw;
+    }
+    .footer-button {
+      margin-right: 16px;
+    }
+    .footer-logo {
+      padding-left: 16px;
+    }
+    header {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+    .header-logo {
+      width: 89px;
+    }
+    .header-button {
+      width: 140px;
+      padding-left: 24px;
+      padding-top: 9px;
+      padding-right: 24px;
+    }
+    .container-text {
+      display: inline-block;
+      width: 91.46vw;
+      margin: 11.46vw 16px 0 16px;
+    }
+    .container-image {
+      display: flex;
+      justify-content: center;
+    }
+    .hero-mobile {
+      display: block;
+      margin-right: 20px;
+    }
+  }
